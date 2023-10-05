@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCp_AXv-i817MhxD9HCfzj5k0bvEH_5pHs",
-  authDomain: "simming-react-dragon.firebaseapp.com",
-  projectId: "simming-react-dragon",
-  storageBucket: "simming-react-dragon.appspot.com",
-  messagingSenderId: "269180531704",
-  appId: "1:269180531704:web:aa708f2d91774bf0fbdc0d"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain:import.meta.env.VITE_AUTHDOMAIN,
+  projectId:import.meta.env.VITE_PROJECTID,
+  storageBucket:import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId:import.meta.env.VITE_MESSAGINGSENDERID,
+  appId:import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
